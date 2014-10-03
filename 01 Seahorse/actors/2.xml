@@ -300,6 +300,14 @@
         </condition>
       </conditions>
       <behaviors>
+        <behavior id="id409985" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">DeadHorse</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id573116</text>
+            <text id="RHS">true</text>
+          </attributes>
+        </behavior>
         <behavior id="id535059" class="ChangeAttributeAction" enabled="true">
           <attributes>
             <text id="name">Change Attribute</text>
@@ -375,6 +383,22 @@
           </attributes>
         </behavior>
       </behaviors>
+    </behavior>
+    <behavior id="id559026" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">game.attributes.id573116</text>
+        <text id="RHS">false</text>
+      </attributes>
+    </behavior>
+    <behavior id="id496353" class="ChangeAttributeAction" enabled="true">
+      <attributes>
+        <text id="name">Change Attribute</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">game.attributes.id789086</text>
+        <text id="RHS">3</text>
+      </attributes>
     </behavior>
   </behaviors>
   <aspects>
