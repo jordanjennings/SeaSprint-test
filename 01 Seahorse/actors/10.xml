@@ -67,6 +67,16 @@
         </behavior>
       </behaviors>
     </behavior>
+    <behavior id="id269050" class="MoveBehavior" enabled="true">
+      <attributes>
+        <text id="name">Move</text>
+        <text id="bundleName">Move.behavior</text>
+        <angle id="direction">180</angle>
+        <index id="space">0</index>
+        <index id="moveType">0</index>
+        <real id="speed">120</real>
+      </attributes>
+    </behavior>
   </behaviors>
   <aspects>
     <graphics>
