@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id210973" PGFVersion="0.19" GSCVersion="0.10.5">
+  <attributes>
+    <text id="name">Red Turd</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">120</real>
+      <real id="height">120</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image" />
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id217233" class="ParticlesBehavior" enabled="true">
+      <attributes>
+        <text id="name">Particles</text>
+        <text id="bundleName">Particles.behavior</text>
+        <index id="numParticles">20</index>
+        <real id="size">40</real>
+        <real id="lifetime">2</real>
+        <real id="startupTime">2</real>
+        <angle id="direction">-180</angle>
+        <real id="speed">20</real>
+        <image id="image" />
+        <angle id="rotation">0</angle>
+        <real id="angularVelocity">185.393258426966</real>
+        <index id="directionRelativity">0</index>
+        <real id="emitterOffsetX">0</real>
+        <real id="emitterOffsetY">0</real>
+        <boolean id="colorChange">true</boolean>
+        <boolean id="sizeChange">true</boolean>
+        <real id="colorTransitionTime">2</real>
+        <real id="sizeTarget">0</real>
+        <real id="sizeTransitionTime">2</real>
+        <color id="color">
+          <real id="red">0.752941176470588</real>
+          <real id="green">0</real>
+          <real id="blue">0</real>
+          <real id="alpha">1</real>
+        </color>
+        <color id="colorTarget">
+          <real id="red">0.850980392156863</real>
+          <real id="green">0.486274509803922</real>
+          <real id="blue">0.0431372549019608</real>
+          <real id="alpha">1</real>
+        </color>
+        <boolean id="affectedByGravity">false</boolean>
+        <enumeration id="blendingMode">2</enumeration>
+      </attributes>
+    </behavior>
+    <behavior id="id730446" class="AccelerateTowardBehavior" enabled="true">
+      <attributes>
+        <text id="name">Accelerate Toward</text>
+        <text id="bundleName">AccelerateToward.behavior</text>
+        <point id="position">
+          <real id="x">
+            <expression>
+              <reference keypath="game.devices.mouse.position.x" />
+            </expression>
+          </real>
+          <real id="y">
+            <expression>
+              <reference keypath="game.devices.mouse.position.x" />
+            </expression>
+          </real>
+        </point>
+        <index id="space">1</index>
+        <real id="acceleration">150</real>
+      </attributes>
+    </behavior>
+    <behavior id="id150299" class="RotateToPositionBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rotate To Position</text>
+        <text id="bundleName">RotateToPosition.behavior</text>
+        <boolean id="runToCompletion">false</boolean>
+        <angle id="angle">0</angle>
+        <index id="space">1</index>
+        <real id="angularVelocity">90</real>
+        <boolean id="continuousMovement">false</boolean>
+        <point id="position">
+          <real id="x">
+            <expression>
+              <reference keypath="game.devices.mouse.position.x" />
+            </expression>
+          </real>
+          <real id="y">
+            <expression>
+              <reference keypath="game.devices.mouse.position.y" />
+            </expression>
+          </real>
+        </point>
+        <angle id="offsetAngle">0</angle>
+      </attributes>
+    </behavior>
+    <behavior id="id504754" class="MoveToBehavior" enabled="true">
+      <attributes>
+        <text id="name">Move To</text>
+        <text id="bundleName">MoveTo.behavior</text>
+        <boolean id="runToCompletion">false</boolean>
+        <point id="position">
+          <real id="x">
+            <expression>
+              <reference keypath="game.devices.mouse.position.x" />
+            </expression>
+          </real>
+          <real id="y">
+            <expression>
+              <reference keypath="game.devices.mouse.position.y" />
+            </expression>
+          </real>
+        </point>
+        <index id="space">1</index>
+        <real id="speed">300</real>
+      </attributes>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">0</integer>
+        <integer id="tileHeight">0</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">1</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>
