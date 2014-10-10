@@ -21,6 +21,7 @@
     <image id="image" />
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
+    <integer id="id111212" name="TreasureType">0</integer>
   </attributes>
   <behaviors>
     <behavior id="id444868" class="TimerBehavior" enabled="true">
@@ -32,6 +33,78 @@
         <boolean id="runToCompletion">false</boolean>
       </attributes>
       <behaviors>
+        <behavior id="id298484" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">self.attributes.id111212</text>
+            <text id="RHS">
+              <expression>
+                <string xml:space="preserve">random(1, 10)</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id869829" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id287486" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.id111212</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">&lt;</text>
+                  <real id="RHS">10</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id814513" class="SpawnAction" enabled="true">
+              <attributes>
+                <text id="name">Spawn Actor</text>
+                <text id="bundleName">Spawn.behavior</text>
+                <text id="prototypeKey">id701595</text>
+                <angle id="direction">0</angle>
+                <index id="directionSpace">0</index>
+                <real id="x">0</real>
+                <real id="y">
+                  <expression>
+                    <string xml:space="preserve">random(-640, 640)</string>
+                  </expression>
+                </real>
+                <index id="positionSpace">0</index>
+                <index id="layerOrder">0</index>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <elseBehaviors>
+            <behavior id="id515702" class="SpawnAction" enabled="true">
+              <attributes>
+                <text id="name">Spawn Actor</text>
+                <text id="bundleName">Spawn.behavior</text>
+                <text id="prototypeKey">id509839</text>
+                <angle id="direction">0</angle>
+                <index id="directionSpace">0</index>
+                <real id="x">0</real>
+                <real id="y">
+                  <expression>
+                    <string xml:space="preserve">random(-640, 640)</string>
+                  </expression>
+                </real>
+                <index id="positionSpace">0</index>
+                <index id="layerOrder">0</index>
+              </attributes>
+            </behavior>
+          </elseBehaviors>
+        </behavior>
         <behavior id="id833713" class="SpawnAction" enabled="true">
           <attributes>
             <text id="name">Spawn Actor</text>
@@ -42,67 +115,11 @@
             <real id="x">0</real>
             <real id="y">
               <expression>
-                <string xml:space="preserve">random(-180, 180)</string>
+                <string xml:space="preserve">random(-640, 640)</string>
               </expression>
             </real>
             <index id="positionSpace">0</index>
-            <index id="layerOrder">0</index>
-          </attributes>
-        </behavior>
-      </behaviors>
-    </behavior>
-    <behavior id="id935041" class="TimerBehavior" enabled="true">
-      <attributes>
-        <text id="name">Timer</text>
-        <text id="bundleName">Timer.behavior</text>
-        <index id="timerType">0</index>
-        <real id="interval">
-          <expression>
-            <string xml:space="preserve">random(1, 4)</string>
-          </expression>
-        </real>
-        <boolean id="runToCompletion">false</boolean>
-      </attributes>
-      <behaviors>
-        <behavior id="id828688" class="SpawnAction" enabled="true">
-          <attributes>
-            <text id="name">Spawn Actor</text>
-            <text id="bundleName">Spawn.behavior</text>
-            <text id="prototypeKey">id701595</text>
-            <angle id="direction">0</angle>
-            <index id="directionSpace">0</index>
-            <real id="x">0</real>
-            <real id="y">
-              <expression>
-                <string xml:space="preserve">random(-180, 180)</string>
-              </expression>
-            </real>
-            <index id="positionSpace">0</index>
-            <index id="layerOrder">0</index>
-          </attributes>
-        </behavior>
-      </behaviors>
-    </behavior>
-    <behavior id="id661079" class="TimerBehavior" enabled="true">
-      <attributes>
-        <text id="name">Timer</text>
-        <text id="bundleName">Timer.behavior</text>
-        <index id="timerType">0</index>
-        <real id="interval">random(4, 10)</real>
-        <boolean id="runToCompletion">false</boolean>
-      </attributes>
-      <behaviors>
-        <behavior id="id232978" class="SpawnAction" enabled="true">
-          <attributes>
-            <text id="name">Spawn Actor</text>
-            <text id="bundleName">Spawn.behavior</text>
-            <text id="prototypeKey">id509839</text>
-            <angle id="direction">0</angle>
-            <index id="directionSpace">1</index>
-            <real id="x">0</real>
-            <real id="y">random(-150, 150)</real>
-            <index id="positionSpace">0</index>
-            <index id="layerOrder">0</index>
+            <index id="layerOrder">1</index>
           </attributes>
         </behavior>
       </behaviors>

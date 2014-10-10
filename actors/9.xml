@@ -8,8 +8,8 @@
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">50</real>
-      <real id="height">50</real>
+      <real id="width">28</real>
+      <real id="height">28</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -23,16 +23,6 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior id="id529403" class="MoveBehavior" enabled="true">
-      <attributes>
-        <text id="name">Move</text>
-        <text id="bundleName">Move.behavior</text>
-        <angle id="direction">180</angle>
-        <index id="space">1</index>
-        <index id="moveType">0</index>
-        <real id="speed">120</real>
-      </attributes>
-    </behavior>
     <behavior id="id963948" class="RuleBehavior" enabled="true">
       <attributes>
         <text id="name">Rule</text>
@@ -61,6 +51,19 @@
             <text id="bundleName">Destroy.behavior</text>
           </attributes>
         </behavior>
+        <behavior id="id440495" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id789219</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id789219" />
+                <string xml:space="preserve">+1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
         <behavior id="id555861" class="SpawnAction" enabled="true">
           <attributes>
             <text id="name">Spawn Actor</text>
@@ -72,6 +75,46 @@
             <real id="y">0</real>
             <index id="positionSpace">0</index>
             <index id="layerOrder">0</index>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+    <behavior id="id529403" class="MoveBehavior" enabled="true">
+      <attributes>
+        <text id="name">Move</text>
+        <text id="bundleName">Move.behavior</text>
+        <angle id="direction">180</angle>
+        <index id="space">1</index>
+        <index id="moveType">0</index>
+        <real id="speed">160</real>
+      </attributes>
+    </behavior>
+    <behavior id="id340328" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Destroyer</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id279399" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id915894</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id526011" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
           </attributes>
         </behavior>
       </behaviors>
@@ -110,7 +153,7 @@
         <real id="restitution">1</real>
         <boolean id="fixedRotation">false</boolean>
         <boolean id="movable">true</boolean>
-        <enumeration id="collisionShape">0</enumeration>
+        <enumeration id="collisionShape">1</enumeration>
         <real id="drag">0</real>
         <real id="angularDrag">0</real>
       </attributes>

@@ -8,8 +8,8 @@
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">50</real>
-      <real id="height">50</real>
+      <real id="width">112</real>
+      <real id="height">112</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -141,6 +141,36 @@
           </expression>
         </text>
       </attributes>
+    </behavior>
+    <behavior id="id905491" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Destroyer</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id233558" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id915894</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id559441" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+      </behaviors>
     </behavior>
   </behaviors>
   <aspects>

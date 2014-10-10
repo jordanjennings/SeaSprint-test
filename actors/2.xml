@@ -8,8 +8,8 @@
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">128</real>
-      <real id="height">128</real>
+      <real id="width">88</real>
+      <real id="height">88</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -50,7 +50,7 @@
             <text id="bundleName">Accelerate.behavior</text>
             <angle id="direction">180</angle>
             <index id="space">0</index>
-            <real id="acceleration">200</real>
+            <real id="acceleration">100</real>
           </attributes>
         </behavior>
       </behaviors>
@@ -179,7 +179,7 @@
             <text id="bundleName">Accelerate.behavior</text>
             <angle id="direction">0</angle>
             <index id="space">0</index>
-            <real id="acceleration">200</real>
+            <real id="acceleration">100</real>
           </attributes>
         </behavior>
       </behaviors>

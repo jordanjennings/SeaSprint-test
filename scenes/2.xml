@@ -1,17 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <scene PGFVersion="0.19" GSCVersion="0.10.5" id="id114406">
   <layers>
+    <layer id="id529000">
+      <actors />
+      <attributes>
+        <text id="name">GamePlay</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+    <layer id="id747244">
+      <actors />
+      <attributes>
+        <text id="name">Collision</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+    <layer id="id579335">
+      <actors>
+        <actor id="id254223" prototype="id201874">
+          <attributes>
+            <point id="position">
+              <real id="x">1221.79883381924</real>
+              <real id="y">454.363636363636</real>
+            </point>
+            <size id="size">
+              <real id="width">120</real>
+              <real id="height">120</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id731044" prototype="id915894">
+          <attributes>
+            <point id="position">
+              <real id="x">425.311967027497</real>
+              <real id="y">381.863636363636</real>
+            </point>
+            <size id="size">
+              <real id="width">31</real>
+              <real id="height">841</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <color id="color">
+              <real id="red">0</real>
+              <real id="green">0</real>
+              <real id="blue">0</real>
+              <real id="alpha">1</real>
+            </color>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">UserInterface</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
     <layer id="id128745">
       <actors>
         <actor id="id649051" prototype="id248983">
           <attributes>
             <point id="position">
-              <real id="x">241</real>
-              <real id="y">332</real>
+              <real id="x">1002.5</real>
+              <real id="y">595.5</real>
             </point>
             <size id="size">
-              <real id="width">495</real>
-              <real id="height">30</real>
+              <real id="width">1000</real>
+              <real id="height">43</real>
             </size>
             <angle id="rotation">0</angle>
             <color id="color">
@@ -37,12 +115,12 @@
         <actor id="id204772" prototype="id248983">
           <attributes>
             <point id="position">
-              <real id="x">493.5</real>
-              <real id="y">161.5</real>
+              <real id="x">1495</real>
+              <real id="y">348</real>
             </point>
             <size id="size">
-              <real id="width">30</real>
-              <real id="height">345</real>
+              <real id="width">41</real>
+              <real id="height">528</real>
             </size>
             <angle id="rotation">0</angle>
             <color id="color">
@@ -68,12 +146,12 @@
         <actor id="id676742" prototype="id248983">
           <attributes>
             <point id="position">
-              <real id="x">-12.5</real>
-              <real id="y">152</real>
+              <real id="x">523</real>
+              <real id="y">345.5</real>
             </point>
             <size id="size">
               <real id="width">30</real>
-              <real id="height">346</real>
+              <real id="height">555</real>
             </size>
             <angle id="rotation">0</angle>
             <color id="color">
@@ -101,11 +179,11 @@
         <actor id="id581136" prototype="id248983">
           <attributes>
             <point id="position">
-              <real id="x">245</real>
-              <real id="y">-13</real>
+              <real id="x">1018.5</real>
+              <real id="y">82</real>
             </point>
             <size id="size">
-              <real id="width">527</real>
+              <real id="width">1000</real>
               <real id="height">30</real>
             </size>
             <angle id="rotation">0</angle>
@@ -134,14 +212,15 @@
         <actor id="id844177" prototype="id867024">
           <attributes>
             <point id="position">
-              <real id="x">240</real>
-              <real id="y">161</real>
+              <real id="x">1003.5</real>
+              <real id="y">334</real>
             </point>
             <size id="size">
-              <real id="width">501</real>
-              <real id="height">329</real>
+              <real id="width">948</real>
+              <real id="height">489</real>
             </size>
             <angle id="rotation">0</angle>
+            <image id="image">FarBGStatic</image>
           </attributes>
           <aspects>
             <graphics>
@@ -174,8 +253,8 @@
         <actor id="id510370" prototype="id147423">
           <attributes>
             <point id="position">
-              <real id="x">238.935779816514</real>
-              <real id="y">163.289215686275</real>
+              <real id="x">696.935779816514</real>
+              <real id="y">287.289215686275</real>
             </point>
             <size id="size">
               <real id="width">88</real>
@@ -205,14 +284,15 @@
         <actor id="id381132" prototype="id240420">
           <attributes>
             <point id="position">
-              <real id="x">560</real>
-              <real id="y">148</real>
+              <real id="x">1560</real>
+              <real id="y">348</real>
             </point>
             <size id="size">
               <real id="width">43</real>
               <real id="height">47</real>
             </size>
             <angle id="rotation">0</angle>
+            <integer id="id307682" name="Treasure?">0</integer>
           </attributes>
           <aspects>
             <graphics>
@@ -230,8 +310,8 @@
         <actor id="id507442" prototype="id850216">
           <attributes>
             <point id="position">
-              <real id="x">188.5</real>
-              <real id="y">292.5</real>
+              <real id="x">675.5</real>
+              <real id="y">520.5</real>
             </point>
             <size id="size">
               <real id="width">256</real>
@@ -253,17 +333,46 @@
             </physics>
           </aspects>
         </actor>
-        <actor id="id193264" prototype="id788584">
+        <actor id="id608857" prototype="id106953">
           <attributes>
             <point id="position">
-              <real id="x">569.5</real>
-              <real id="y">295.5</real>
+              <real id="x">1067.41838649156</real>
+              <real id="y">523</real>
             </point>
             <size id="size">
-              <real id="width">114</real>
-              <real id="height">42</real>
+              <real id="width">440</real>
+              <real id="height">64</real>
             </size>
             <angle id="rotation">0</angle>
+            <integer id="id706181" name="ElementID">1</integer>
+            <image id="image">DistanceTag</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id759725" prototype="id106953">
+          <attributes>
+            <point id="position">
+              <real id="x">1401.41838649156</real>
+              <real id="y">522</real>
+            </point>
+            <size id="size">
+              <real id="width">460</real>
+              <real id="height">64</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <integer id="id706181" name="ElementID">2</integer>
+            <image id="image">TreasureTag</image>
           </attributes>
           <aspects>
             <graphics>
@@ -286,11 +395,11 @@
     </layer>
   </layers>
   <attributes>
-    <text id="name">Initial Scene</text>
+    <text id="name">Game</text>
     <real id="time">0</real>
     <size id="size">
-      <real id="width">480</real>
-      <real id="height">320</real>
+      <real id="width">3600</real>
+      <real id="height">800</real>
     </size>
     <boolean id="wrapX">false</boolean>
     <boolean id="wrapY">false</boolean>
@@ -306,16 +415,16 @@
     </color>
     <rect id="camera">
       <point id="origin">
-        <real id="x">0</real>
-        <real id="y">0</real>
+        <real id="x">536</real>
+        <real id="y">95</real>
       </point>
       <size id="size">
-        <real id="width">480</real>
-        <real id="height">320</real>
+        <real id="width">940</real>
+        <real id="height">480</real>
       </size>
       <size id="trackingArea">
         <real id="width">398.87890625</real>
-        <real id="height">260</real>
+        <real id="height">208</real>
       </size>
       <real id="rotation">0</real>
     </rect>

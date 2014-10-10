@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id767291" PGFVersion="0.19" GSCVersion="0.10.5">
+<actor id="id260049" PGFVersion="0.19" GSCVersion="0.10.5">
   <attributes>
-    <text id="name">SeaHorseWave</text>
+    <text id="name">MenuLogo</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">30</real>
-      <real id="height">30</real>
+      <real id="width">720</real>
+      <real id="height">512</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -18,53 +18,50 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">SeahorseWave</image>
+    <image id="image">MenuLogo</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
+    <real id="id939265" name="StartY">0.0</real>
   </attributes>
   <behaviors>
-    <behavior id="id270596" class="AccelerateBehavior" enabled="true">
+    <behavior id="id779353" class="ChangeAttributeAction" enabled="true">
       <attributes>
-        <text id="name">Accelerate</text>
-        <text id="bundleName">Accelerate.behavior</text>
-        <angle id="direction">-180</angle>
-        <index id="space">0</index>
-        <real id="acceleration">60</real>
+        <text id="name">setStartY</text>
+        <text id="bundleName">ChangeAttribute.behavior</text>
+        <text id="targetAttribute">self.attributes.id939265</text>
+        <text id="RHS">
+          <expression>
+            <reference keypath="self.attributes.position.y" />
+          </expression>
+        </text>
       </attributes>
     </behavior>
-    <behavior id="id319828" class="TimerBehavior" enabled="true">
+    <behavior id="id411512" class="ConstrainAttributeBehavior" enabled="true">
       <attributes>
-        <text id="name">Timer</text>
-        <text id="bundleName">Timer.behavior</text>
-        <index id="timerType">1</index>
-        <real id="interval">0.4</real>
-        <boolean id="runToCompletion">true</boolean>
+        <text id="name">Make a Wave!</text>
+        <text id="bundleName">ConstrainAttribute.behavior</text>
+        <text id="targetAttribute">self.attributes.position.y</text>
+        <text id="RHS">
+          <expression>
+            <string xml:space="preserve">sin(</string>
+            <reference keypath="self.attributes.time" />
+            <string xml:space="preserve">*160)*4+</string>
+            <reference keypath="self.attributes.id939265" />
+          </expression>
+        </text>
       </attributes>
-      <behaviors>
-        <behavior id="id472465" class="DestroyAction" enabled="true">
-          <attributes>
-            <text id="name">Destroy</text>
-            <text id="bundleName">Destroy.behavior</text>
-          </attributes>
-        </behavior>
-      </behaviors>
     </behavior>
-    <behavior id="id928575" class="GrowShrinkBehavior" enabled="true">
+    <behavior id="id127449" class="GrowShrinkBehavior" enabled="true">
       <attributes>
-        <text id="name">Change Size</text>
+        <text id="name">ChangeSizeAttempt</text>
         <text id="bundleName">ChangeSize.behavior</text>
-        <real id="growthRate">4</real>
-      </attributes>
-    </behavior>
-    <behavior id="id212985" class="InterpolateBehavior" enabled="true">
-      <attributes>
-        <text id="name">Interpolate</text>
-        <text id="bundleName">Interpolate.behavior</text>
-        <boolean id="runToCompletion">true</boolean>
-        <text id="targetAttribute">self.attributes.color.alpha</text>
-        <real id="finalValue">0</real>
-        <real id="duration">0.5</real>
-        <index id="easing">0</index>
+        <real id="growthRate">
+          <expression>
+            <string xml:space="preserve">sin(2*</string>
+            <reference keypath="self.attributes.time" />
+            <string xml:space="preserve">)</string>
+          </expression>
+        </real>
       </attributes>
     </behavior>
   </behaviors>
@@ -79,8 +76,8 @@
         <enumeration id="verticalAnchor">0</enumeration>
         <boolean id="flipHorizontally">false</boolean>
         <boolean id="flipVertically">false</boolean>
-        <integer id="tileWidth">64</integer>
-        <integer id="tileHeight">64</integer>
+        <integer id="tileWidth">720</integer>
+        <integer id="tileHeight">512</integer>
       </attributes>
     </graphics>
     <motion>

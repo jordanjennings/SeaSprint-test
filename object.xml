@@ -20,9 +20,17 @@
     <actor id="id850216" />
     <actor id="id509839" />
     <actor id="id788584" />
+    <actor id="id201874" />
+    <actor id="id915894" />
+    <actor id="id106953" />
+    <actor id="id321106" />
+    <actor id="id870803" />
+    <actor id="id260049" />
+    <actor id="id707173" />
   </prototypes>
   <plugins />
   <scenes>
+    <scene id="id451121" />
     <scene id="id114406" />
   </scenes>
   <attributes>
@@ -34,5 +42,9 @@
     </size>
     <text id="actorTags" />
     <integer id="id789086" name="HealthPoints">3</integer>
+    <integer id="id789219" name="Treasure">0</integer>
+    <integer id="id106406" name="Distance">0</integer>
+    <integer id="id300849" name="HighestDistance">0</integer>
+    <integer id="id760616" name="TotalTreasure">0</integer>
   </attributes>
 </game>
