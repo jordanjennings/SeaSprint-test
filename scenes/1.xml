@@ -17,7 +17,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -28,14 +31,91 @@
         <actor id="id853278" prototype="id260049">
           <attributes>
             <point id="position">
-              <real id="x">481.703125</real>
-              <real id="y">278.655555555555</real>
+              <real id="x">338.703125</real>
+              <real id="y">255.655555555555</real>
             </point>
             <size id="size">
               <real id="width">533.40625</real>
               <real id="height">379.311111111111</real>
             </size>
             <angle id="rotation">0</angle>
+            <integer id="id632499" name="StartWidth">0</integer>
+            <integer id="id244473" name="StartHeight">0</integer>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id630934" prototype="id707173">
+          <attributes>
+            <point id="position">
+              <real id="x">792.5</real>
+              <real id="y">226</real>
+            </point>
+            <size id="size">
+              <real id="width">298</real>
+              <real id="height">200</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">Button_Play</image>
+            <integer id="id373274" name="ElementID">1</integer>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id457412" prototype="id707173">
+          <attributes>
+            <point id="position">
+              <real id="x">302.5</real>
+              <real id="y">430</real>
+            </point>
+            <size id="size">
+              <real id="width">600</real>
+              <real id="height">92</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">Menu_TotalTreasureTag</image>
+            <integer id="id373274" name="ElementID">2</integer>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id564528" prototype="id707173">
+          <attributes>
+            <point id="position">
+              <real id="x">297.5</real>
+              <real id="y">48</real>
+            </point>
+            <size id="size">
+              <real id="width">600</real>
+              <real id="height">92</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">Menu_DistanceTag</image>
+            <integer id="id373274" name="ElementID">3</integer>
           </attributes>
           <aspects>
             <graphics>

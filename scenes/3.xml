@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene PGFVersion="0.19" GSCVersion="0.10.5" id="id729898">
+  <layers>
+    <layer id="id644215">
+      <actors>
+        <actor id="id799503" prototype="id471631">
+          <attributes>
+            <point id="position">
+              <real id="x">917.727954971858</real>
+              <real id="y">328.004376367615</real>
+            </point>
+            <size id="size">
+              <real id="width">950</real>
+              <real id="height">488</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">PauseBG</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">Background</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+  </layers>
+  <attributes>
+    <text id="name">Pause</text>
+    <real id="time">0</real>
+    <size id="size">
+      <real id="width">3600</real>
+      <real id="height">800</real>
+    </size>
+    <boolean id="wrapX">false</boolean>
+    <boolean id="wrapY">false</boolean>
+    <point id="gravity">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <color id="color">
+      <real id="red">0.180392156862745</real>
+      <real id="green">0.533333333333333</real>
+      <real id="blue">0.545098039215686</real>
+      <real id="alpha">1</real>
+    </color>
+    <rect id="camera">
+      <point id="origin">
+        <real id="x">449</real>
+        <real id="y">87</real>
+      </point>
+      <size id="size">
+        <real id="width">940</real>
+        <real id="height">480</real>
+      </size>
+      <size id="trackingArea">
+        <real id="width">400</real>
+        <real id="height">260</real>
+      </size>
+      <real id="rotation">0</real>
+    </rect>
+    <attributes id="autorotate">
+      <boolean id="landscapeLeft">true</boolean>
+      <boolean id="portrait">false</boolean>
+      <boolean id="landscapeRight">false</boolean>
+      <boolean id="portraitUpsideDown">false</boolean>
+    </attributes>
+  </attributes>
+</scene>

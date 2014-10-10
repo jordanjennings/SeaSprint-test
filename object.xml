@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game GSCVersion="0.10.5" PGFVersion="0.19" title="My Great Project">
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">480</real>
+      <real id="height">320</real>
+    </size>
+    <text id="actorTags" />
+    <integer id="id789086" name="HealthPoints">3</integer>
+    <integer id="id789219" name="Treasure">0</integer>
+    <integer id="id106406" name="Distance">0</integer>
+    <integer id="id300849" name="HighestDistance">0</integer>
+    <integer id="id760616" name="TotalTreasure">0</integer>
+  </attributes>
   <tags />
   <resolutionIndependence>0</resolutionIndependence>
   <instructions>Add game instructions here.</instructions>
@@ -27,24 +41,13 @@
     <actor id="id870803" />
     <actor id="id260049" />
     <actor id="id707173" />
+    <actor id="id471631" />
+    <actor id="id119004" />
   </prototypes>
   <plugins />
   <scenes>
     <scene id="id451121" />
     <scene id="id114406" />
+    <scene id="id729898" />
   </scenes>
-  <attributes>
-    <text id="name">default name</text>
-    <real id="time">0</real>
-    <size id="displaySize">
-      <real id="width">480</real>
-      <real id="height">320</real>
-    </size>
-    <text id="actorTags" />
-    <integer id="id789086" name="HealthPoints">3</integer>
-    <integer id="id789219" name="Treasure">0</integer>
-    <integer id="id106406" name="Distance">0</integer>
-    <integer id="id300849" name="HighestDistance">0</integer>
-    <integer id="id760616" name="TotalTreasure">0</integer>
-  </attributes>
 </game>

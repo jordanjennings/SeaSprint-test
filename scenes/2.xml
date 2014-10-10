@@ -387,6 +387,28 @@
             </physics>
           </aspects>
         </actor>
+        <actor id="id463862" prototype="id321106">
+          <attributes>
+            <point id="position">
+              <real id="x">1000.66416510319</real>
+              <real id="y">156</real>
+            </point>
+            <size id="size">
+              <real id="width">660</real>
+              <real id="height">92</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
       </actors>
       <attributes>
         <text id="name">Layer 2</text>
