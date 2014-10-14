@@ -107,12 +107,66 @@
         </condition>
       </conditions>
       <behaviors>
+        <behavior id="id888433" class="RuleBehavior" enabled="true">
+          <attributes>
+            <text id="name">HighestDistance</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id722055" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.id373274</text>
+                <text id="name">default name</text>
+              </attributes>
+              <predicate type="number">
+                <attributes>
+                  <text id="operator">=</text>
+                  <real id="RHS">3</real>
+                </attributes>
+              </predicate>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior id="id848840" class="LoadAttributeAction" enabled="true">
+              <attributes>
+                <text id="name">Load Attribute</text>
+                <text id="bundleName">LoadAtribute.behavior</text>
+                <text id="targetAttribute">game.attributes.id300849</text>
+                <text id="key">Key: "HighestDistance"</text>
+              </attributes>
+            </behavior>
+            <behavior id="id747834" class="DisplayTextBehavior" enabled="true">
+              <attributes>
+                <text id="name">Display Text</text>
+                <text id="bundleName">DisplayText.behavior</text>
+                <text id="text">
+                  <expression>
+                    <reference keypath="game.attributes.id300849" />
+                    <string xml:space="preserve">.."m"</string>
+                  </expression>
+                </text>
+                <text id="font">Verdana</text>
+                <real id="size">60</real>
+                <index id="alignment">2</index>
+                <boolean id="wrap">false</boolean>
+                <color id="color">
+                  <real id="red">1</real>
+                  <real id="green">0.996078431372549</real>
+                  <real id="blue">0.749019607843137</real>
+                  <real id="alpha">1</real>
+                </color>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
         <behavior id="id704044" class="LoadAttributeAction" enabled="true">
           <attributes>
             <text id="name">Load Attribute</text>
             <text id="bundleName">LoadAtribute.behavior</text>
             <text id="targetAttribute">game.attributes.id760616</text>
-            <text id="key">Key:"TotalTreasure"</text>
+            <text id="key">Key: "TotalTreasure"</text>
           </attributes>
         </behavior>
         <behavior id="id135141" class="DisplayTextBehavior" enabled="true">
@@ -122,60 +176,6 @@
             <text id="text">
               <expression>
                 <reference keypath="game.attributes.id760616" />
-              </expression>
-            </text>
-            <text id="font">Verdana</text>
-            <real id="size">60</real>
-            <index id="alignment">2</index>
-            <boolean id="wrap">false</boolean>
-            <color id="color">
-              <real id="red">1</real>
-              <real id="green">0.996078431372549</real>
-              <real id="blue">0.749019607843137</real>
-              <real id="alpha">1</real>
-            </color>
-          </attributes>
-        </behavior>
-      </behaviors>
-    </behavior>
-    <behavior id="id888433" class="RuleBehavior" enabled="true">
-      <attributes>
-        <text id="name">NOT FINISHED</text>
-        <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
-      </attributes>
-      <conditions>
-        <condition id="id722055" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
-          <attributes>
-            <index id="conditionType">1</index>
-            <text id="subjectAttribute">self.attributes.id373274</text>
-            <text id="name">default name</text>
-          </attributes>
-          <predicate type="number">
-            <attributes>
-              <text id="operator">=</text>
-              <real id="RHS">3</real>
-            </attributes>
-          </predicate>
-        </condition>
-      </conditions>
-      <behaviors>
-        <behavior id="id848840" class="LoadAttributeAction" enabled="true">
-          <attributes>
-            <text id="name">Load Attribute</text>
-            <text id="bundleName">LoadAtribute.behavior</text>
-            <text id="targetAttribute">game.attributes.id300849</text>
-            <text id="key">Key:"HighestDistance"</text>
-          </attributes>
-        </behavior>
-        <behavior id="id747834" class="DisplayTextBehavior" enabled="true">
-          <attributes>
-            <text id="name">Display Text</text>
-            <text id="bundleName">DisplayText.behavior</text>
-            <text id="text">
-              <expression>
-                <reference keypath="game.attributes.id300849" />
-                <string xml:space="preserve">.."m"</string>
               </expression>
             </text>
             <text id="font">Verdana</text>
