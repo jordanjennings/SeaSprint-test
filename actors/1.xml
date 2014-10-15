@@ -58,7 +58,7 @@
     </behavior>
     <behavior id="id258705" class="RuleBehavior" enabled="true">
       <attributes>
-        <text id="name">Rule</text>
+        <text id="name">Fartknocker</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
